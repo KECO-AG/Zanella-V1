@@ -1,0 +1,142 @@
+body {
+	font-family: arial;
+	margin: 0px; /* for IE6 / IE7 */
+	line-height: 1;
+}
+
+/* add bottom margin between tables */
+#table1,
+#table2 {
+	margin-bottom: 20px;
+}
+
+/* drag container */
+#drag {
+	margin: auto;
+	/*width: 10424px;*/
+}
+
+/* set border for images inside DRAG region - exclude image margin inheritance */
+/* my WordPress theme had some funny margin settings */
+#drag img {
+	margin: 1px;
+}
+
+/* drag objects (DIV inside table cells) */
+.drag {
+	cursor: move;
+	margin: auto;
+	margin-bottom: 1px;
+	margin-top: 1px;
+	z-index: 10;
+	background-color: white;
+	text-align: left;
+	font-size: 10pt; /* needed for cloned object */
+	width: 250px;
+	/* neu 05.09.2011 */
+	float: left;
+	/* --- */
+	/*height: 20px;*/
+	line-height: 14px;
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
+}
+
+
+/* drag objects border for the first table */
+.t1 {
+	border: 2px solid Red;
+}
+/* drag object border for the second table */
+.t2 {
+	border: 2px solid Blue;
+}
+/* cloned objects - third table */
+.t3 {
+	border: 2px solid Black;
+}
+/* cloned objects - third table */
+.t4 {
+	border: 2px solid Yellow;
+}
+.tErledigt {
+	border: 2px solid Grey;
+	background: Green;
+}
+.tExpired {
+	border: 2px solid Black;
+	background: Red;
+}
+/* allow / deny access to cells marked with 'mark' class name */
+.mark {
+	/*color: white;*/
+	background-color: #9B9EA2;
+}
+/* trash cell */
+.trash {
+	color: white;
+	background-color: #2D4B7A;
+}
+
+/* tables */
+div#drag table {
+	background-color: #e0e0e0;
+	border-collapse: collapse;
+}
+
+
+/* input elements in dragging container */
+div#drag input {
+	cursor: auto;
+}
+/* height for input text in DIV element */
+div#drag #d13 input {
+	height: 13px;
+}
+/* height for dropdown menu in DIV element */
+div#drag #d5 select {
+	height: 20px;
+}
+
+/* table cells */
+div#drag td {
+	height: 25px;
+	width: 250px;
+	border: 1px solid white;
+	text-align: left;
+	vertical-align: top;
+	font-size: 10pt;
+	padding: 2px;
+}
+
+/* "Click" button */
+.button {
+	background-color: #6A93D4;
+	color: white;
+	border-width: 1px;
+	width: 40px;
+	padding: 0px;
+}
+
+
+/* toggle checkboxes at the bottom */
+.checkbox {
+	margin-left: 13px;
+	margin-right: 14px;
+	width: 13px; /* needed for IE ?! */
+}
+
+
+/* message cell */
+.message_line {
+	padding-left: 10px;
+	margin-bottom: 3px;
+	font-size: 10pt;
+	color: #888;
+}
+h4 {
+	font-size: 1.0em;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
